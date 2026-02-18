@@ -3,10 +3,8 @@
         "apps": [],
         "details": [
             {
-                "appID": "AWRCKD8DGF.com.contactPlus.ContactPlus",
-                "paths": [
-                    "*"
-                ]
+                "appID": "JPXHBUZBNM.com.contactPlus.ContactPlus",
+                "paths": ["*"]
             }
         ]
     }
