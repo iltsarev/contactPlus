@@ -1,9 +1,170 @@
-<!doctype html>
-<html>
-  <head>
-    <title>Hello world</title>
-  </head>
-  <body>
-    <p>Hello world</p>
-  </body>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact+ — Фото из Telegram в контакты iPhone</title>
+  <meta name="description" content="Contact+ находит ваши контакты в Telegram и устанавливает их фото в адресную книгу iPhone. Автоматическое сопоставление, сравнение фото, пакетная синхронизация.">
+  <meta name="apple-itunes-app" content="app-id=1580828498">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', sans-serif;
+      background: #0a1a2a;
+      color: #fff;
+      min-height: 100vh;
+    }
+    .hero {
+      background: linear-gradient(135deg, #123C5F 0%, #1a5a6e 40%, #26A5BC 100%);
+      padding: 80px 20px 60px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 48px;
+      font-weight: 700;
+      margin-bottom: 12px;
+      letter-spacing: -1px;
+    }
+    .hero .subtitle {
+      font-size: 20px;
+      color: #5EEAD4;
+      margin-bottom: 32px;
+      font-weight: 500;
+    }
+    .hero .description {
+      font-size: 17px;
+      color: rgba(255,255,255,0.85);
+      max-width: 600px;
+      margin: 0 auto 40px;
+      line-height: 1.6;
+    }
+    .app-store-badge {
+      display: inline-block;
+      transition: opacity 0.2s;
+    }
+    .app-store-badge:hover { opacity: 0.8; }
+    .app-store-badge img { height: 54px; }
+    .features {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
+    .features h2 {
+      font-size: 32px;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 48px;
+      color: #5EEAD4;
+    }
+    .feature-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+    }
+    .feature {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(94,234,212,0.15);
+      border-radius: 16px;
+      padding: 28px;
+    }
+    .feature h3 {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: #fff;
+    }
+    .feature p {
+      font-size: 15px;
+      color: rgba(255,255,255,0.7);
+      line-height: 1.5;
+    }
+    .security {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px 60px;
+      text-align: center;
+    }
+    .security h2 {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+    .security p {
+      font-size: 16px;
+      color: rgba(255,255,255,0.7);
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+    footer {
+      border-top: 1px solid rgba(255,255,255,0.1);
+      padding: 32px 20px;
+      text-align: center;
+      font-size: 14px;
+      color: rgba(255,255,255,0.4);
+    }
+    footer a {
+      color: #5EEAD4;
+      text-decoration: none;
+    }
+    footer a:hover { text-decoration: underline; }
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 36px; }
+      .hero .subtitle { font-size: 18px; }
+      .feature-grid { grid-template-columns: 1fr; gap: 20px; }
+    }
+  </style>
+</head>
+<body>
+  <section class="hero">
+    <h1>Contact+</h1>
+    <p class="subtitle">Фото из Telegram в контакты iPhone</p>
+    <p class="description">
+      Автоматически находит ваши контакты в Telegram и устанавливает актуальные фотографии в адресную книгу.
+      Сравнивайте фото, выбирайте нужные и обновляйте все разом.
+    </p>
+    <a class="app-store-badge" href="https://apps.apple.com/app/id1580828498">
+      <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+    </a>
+  </section>
+
+  <section class="features">
+    <h2>Возможности</h2>
+    <div class="feature-grid">
+      <div class="feature">
+        <h3>Автоматическое сопоставление</h3>
+        <p>Импорт контактов в Telegram, поиск совпадений по номеру телефона и список пар — всё автоматически.</p>
+      </div>
+      <div class="feature">
+        <h3>Сравнение фото</h3>
+        <p>Текущее фото из адресной книги и фото из Telegram рядом. Вы решаете — обновить или оставить.</p>
+      </div>
+      <div class="feature">
+        <h3>Пакетная синхронизация</h3>
+        <p>Выберите несколько контактов и обновите фото одним нажатием. Или листайте карточки по одной.</p>
+      </div>
+      <div class="feature">
+        <h3>Умный фильтр</h3>
+        <p>Контакты с совпадающими фото скрываются автоматически — видите только те, где есть разница.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="security">
+    <h2>Безопасность</h2>
+    <p>
+      Данные не покидают устройство. Telegram-сессия зашифрована, база данных защищена ключом из Keychain.
+      Нет серверов, нет аналитики, нет трекинга.
+    </p>
+  </section>
+
+  <footer>
+    <p>
+      <a href="privacy.html">Политика конфиденциальности</a> &middot;
+      <a href="support.html">Поддержка</a> &middot;
+      <a href="mailto:contactplus@support.com">Связаться</a>
+    </p>
+    <p style="margin-top: 12px;">&copy; 2025 Contact+</p>
+  </footer>
+</body>
 </html>
