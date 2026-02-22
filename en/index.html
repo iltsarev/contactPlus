@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Contact+ — Фото из Telegram в контакты iPhone</title>
-  <meta name="description" content="Contact+ находит ваши контакты в Telegram и устанавливает их фото в адресную книгу iPhone. Автоматическое сопоставление, сравнение фото, пакетная синхронизация.">
+  <title>Contact+ — Telegram Photos for Your iPhone Contacts</title>
+  <meta name="description" content="Contact+ finds your contacts on Telegram and sets their profile photos in your iPhone address book. Automatic matching, photo comparison, and batch sync.">
   <meta name="apple-itunes-app" content="app-id=1580828498">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -13,6 +13,22 @@
       background: #0a1a2a;
       color: #fff;
       min-height: 100vh;
+    }
+    .lang-switch {
+      position: absolute;
+      top: 24px;
+      right: 24px;
+      font-size: 15px;
+    }
+    .lang-switch a {
+      color: rgba(255,255,255,0.5);
+      text-decoration: none;
+      padding: 4px 8px;
+    }
+    .lang-switch a:hover { color: #fff; }
+    .lang-switch a.active {
+      color: #5EEAD4;
+      font-weight: 600;
     }
     .hero {
       position: relative;
@@ -45,22 +61,6 @@
     }
     .app-store-badge:hover { opacity: 0.8; }
     .app-store-badge img { height: 54px; }
-    .lang-switch {
-      position: absolute;
-      top: 24px;
-      right: 24px;
-      font-size: 15px;
-    }
-    .lang-switch a {
-      color: rgba(255,255,255,0.5);
-      text-decoration: none;
-      padding: 4px 8px;
-    }
-    .lang-switch a:hover { color: #fff; }
-    .lang-switch a.active {
-      color: #5EEAD4;
-      font-weight: 600;
-    }
     .features {
       max-width: 800px;
       margin: 0 auto;
@@ -135,13 +135,13 @@
 <body>
   <section class="hero">
     <div class="lang-switch">
-      <a href="index.html" class="active">RU</a> / <a href="en/index.html">EN</a>
+      <a href="../index.html">RU</a> / <a href="index.html" class="active">EN</a>
     </div>
     <h1>Contact+</h1>
-    <p class="subtitle">Фото из Telegram в контакты iPhone</p>
+    <p class="subtitle">Telegram photos for your iPhone contacts</p>
     <p class="description">
-      Автоматически находит ваши контакты в Telegram и устанавливает актуальные фотографии в адресную книгу.
-      Сравнивайте фото, выбирайте нужные и обновляйте все разом.
+      Automatically finds your contacts on Telegram and sets their up-to-date profile photos in your address book.
+      Compare photos, choose the ones you like, and update them all at once.
     </p>
     <a class="app-store-badge" href="https://apps.apple.com/app/id1580828498">
       <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
@@ -149,40 +149,40 @@
   </section>
 
   <section class="features">
-    <h2>Возможности</h2>
+    <h2>Features</h2>
     <div class="feature-grid">
       <div class="feature">
-        <h3>Автоматическое сопоставление</h3>
-        <p>Импорт контактов в Telegram, поиск совпадений по номеру телефона и список пар — всё автоматически.</p>
+        <h3>Automatic Matching</h3>
+        <p>Imports your contacts into Telegram, finds matches by phone number, and shows you a list of pairs — all automatically.</p>
       </div>
       <div class="feature">
-        <h3>Сравнение фото</h3>
-        <p>Текущее фото из адресной книги и фото из Telegram рядом. Вы решаете — обновить или оставить.</p>
+        <h3>Photo Comparison</h3>
+        <p>See the current address book photo and the Telegram photo side by side. You decide — update or keep.</p>
       </div>
       <div class="feature">
-        <h3>Пакетная синхронизация</h3>
-        <p>Выберите несколько контактов и обновите фото одним нажатием. Или листайте карточки по одной.</p>
+        <h3>Batch Sync</h3>
+        <p>Select multiple contacts and update their photos with one tap. Or swipe through cards one by one.</p>
       </div>
       <div class="feature">
-        <h3>Умный фильтр</h3>
-        <p>Контакты с совпадающими фото скрываются автоматически — видите только те, где есть разница.</p>
+        <h3>Smart Filter</h3>
+        <p>Contacts with matching photos are hidden automatically — you only see the ones that differ.</p>
       </div>
     </div>
   </section>
 
   <section class="security">
-    <h2>Безопасность</h2>
+    <h2>Security</h2>
     <p>
-      Данные не покидают устройство. Telegram-сессия зашифрована, база данных защищена ключом из Keychain.
-      Нет серверов, нет аналитики, нет трекинга.
+      Your data never leaves the device. The Telegram session is encrypted, the database is protected with a Keychain key.
+      No servers, no analytics, no tracking.
     </p>
   </section>
 
   <footer>
     <p>
-      <a href="privacy.html">Политика конфиденциальности</a> &middot;
-      <a href="support.html">Поддержка</a> &middot;
-      <a href="mailto:mail@itsarev.me">Связаться</a>
+      <a href="privacy.html">Privacy Policy</a> &middot;
+      <a href="support.html">Support</a> &middot;
+      <a href="mailto:mail@itsarev.me">Contact</a>
     </p>
     <p style="margin-top: 12px;">&copy; 2025 Contact+</p>
   </footer>
